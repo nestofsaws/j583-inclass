@@ -3,7 +3,7 @@ from django.utils import timezone
 
 # Create your models here.
 class Student (models.Model):
-    name = models.CharField(unique=True, max_length=50)
+    name = models.CharField(unique=False, max_length=50)
     pid = models.CharField(unique = True, max_length=12)
     grade = models.IntegerField(max_length=3, null=True)
 
